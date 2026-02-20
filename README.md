@@ -4,24 +4,23 @@ Um bot de Discord avançado para integração com CharacterAI. Possui sistema de
 
 # 🤖 Discord CharacterAI Bot
 
-[cite_start]Este projeto é uma integração entre o Discord e a plataforma CharacterAI, permitindo que os usuários conversem com personagens de inteligência artificial diretamente pelos canais do servidor. [cite: 1, 8] [cite_start]O sistema foi desenvolvido com foco em estabilidade, persistência de dados e controle de acesso. [cite: 12, 13, 15]
+[cite_start]Este projeto realiza a integração entre o Discord e a plataforma CharacterAI[cite: 1], permitindo que usuários interajam com personagens de inteligência artificial em servidores. [cite_start]O sistema foca em persistência de dados e gerenciamento modular de serviços[cite: 11, 16].
 
 ## ✨ Funcionalidades
 
-* [cite_start]**💬 Chat em Tempo Real**: Comandos e eventos otimizados para interação contínua com IAs. [cite: 1, 8]
-* [cite_start]**🔐 Controle de Acesso**: Sistema de permissão para gerenciar quais usuários podem interagir com o bot. [cite: 12]
-* [cite_start]**💾 Persistência de Sessão**: Salva automaticamente o estado da conversa para que o contexto não seja perdido entre reinicializações. [cite: 15]
-* [cite_start]**📜 Histórico de Mensagens**: Armazenamento de mensagens primárias e logs de conversas para auditoria e continuidade. [cite: 14]
-* [cite_start]**🔑 Gestão de Credenciais**: Serviço dedicado para o armazenamento seguro de tokens e credenciais necessárias. [cite: 13]
-* [cite_start]**⚙️ Monitoramento de Ambiente**: Possui um "watcher" para variáveis de ambiente e limpeza de estados globais. [cite: 11, 12]
+* [cite_start]**💬 Chat e Comandos**: Implementação de comandos e eventos específicos para o bot do Discord[cite: 1, 8].
+* [cite_start]**🔐 Controle de Permissões**: Serviço dedicado para permitir ou restringir o acesso de usuários ao bot (`permit_user.py`)[cite: 12].
+* [cite_start]**💾 Persistência de Sessão**: Salvamento e carregamento automático de sessões para manter o contexto das conversas (`save_session.py`)[cite: 14, 15].
+* [cite_start]**📜 Histórico de Mensagens**: Armazenamento de mensagens primárias e logs das interações (`save_messages.py`, `save_primary_message.py`)[cite: 13, 14].
+* [cite_start]**🔑 Gestão de Credenciais**: Armazenamento seguro de tokens e credenciais necessárias para a API (`save_credentials.py`)[cite: 12, 13].
+* [cite_start]**⚙️ Monitoramento de Ambiente**: Possui um sistema de "watcher" para variáveis de ambiente e limpeza de estados globais (`env_watcher.py`, `clear_global.py`)[cite: 11, 12].
 
 ## 📂 Estrutura do Projeto
 
-* [cite_start]**`bot/`**: Contém a lógica de comandos, eventos e a instância principal do bot Discord. [cite: 1, 8, 10]
-* [cite_start]**`services/`**: Scripts responsáveis pelo backend, incluindo salvamento de sessões, mensagens e validação de usuários. [cite: 12, 13, 14, 15]
-* [cite_start]**`save/`**: Diretório para armazenamento local de dados de usuários e configurações globais. [cite: 16]
-* [cite_start]**`config.py`**: Centraliza as definições e variáveis globais do sistema. [cite: 10]
-* [cite_start]**`main.py`**: Ponto de entrada para execução da aplicação. [cite: 10, 11]
+* [cite_start]**`bot/`**: Contém a lógica de comandos (`commands.py`), eventos (`events.py`) e a instância principal do bot[cite: 1, 8, 10].
+* [cite_start]**`services/`**: Scripts de backend para gerenciamento de dados, sessões e usuários[cite: 11, 12, 13].
+* [cite_start]**`save/`**: Diretórios destinados ao armazenamento local de informações globais e de usuários[cite: 15, 16].
+* [cite_start]**`config.py` e `main.py`**: Configurações centrais e ponto de entrada da aplicação[cite: 10].
 
 ## 🚀 Como Instalar
 
@@ -31,24 +30,19 @@ Um bot de Discord avançado para integração com CharacterAI. Possui sistema de
     cd projeto_discord_CharacterAi
     ```
 
-2.  [cite_start]**Instale as dependências necessárias:** [cite: 11]
+2.  **Instale as dependências:**
+    * [cite_start]O projeto utiliza as bibliotecas listadas em `requirements.txt.txt`[cite: 11].
     ```bash
     pip install -r requirements.txt.txt
     ```
 
-3.  [cite_start]**Configure suas credenciais:** [cite: 1]
-    * [cite_start]Crie ou edite o arquivo `.env` na raiz do projeto. [cite: 1]
-    * Adicione seu `DISCORD_TOKEN` e as chaves da `CHARACTER_AI`.
+3.  **Configuração:**
+    * [cite_start]Configure o arquivo `.env` com seu `DISCORD_TOKEN` e chaves da `CharacterAI`[cite: 1].
 
-4.  [cite_start]**Inicie o bot:** [cite: 10, 11]
+4.  **Inicie o bot:**
     ```bash
     python main.py
     ```
 
-## 🛠️ Tecnologias Utilizadas
-
-* [cite_start]**Linguagem**: Python [cite: 11]
-* [cite_start]**Bibliotecas**: Discord.py, CharacterAI API, Python-dotenv [cite: 1, 11]
-
 ---
-**Desenvolvido por [Seu Nome/User]**
+**Desenvolvido com foco em integração e persistência.**
