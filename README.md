@@ -4,16 +4,16 @@ Um bot de Discord avançado para integração com CharacterAI. Possui sistema de
 
 # 🤖 Discord CharacterAI Bot
 
-Este projeto realiza a integração entre o Discord e a plataforma CharacterAI[cite: 1], permitindo que usuários interajam com personagens de inteligência artificial em servidores. O sistema foca em persistência de dados e gerenciamento modular de serviços.
+[cite_start]Este projeto realiza a integração entre o Discord e a plataforma CharacterAI[cite: 1], permitindo que usuários interajam com personagens de inteligência artificial em servidores. [cite_start]O sistema foca em persistência de dados e gerenciamento modular de serviços[cite: 11, 16].
 
 ## ✨ Funcionalidades
 
-**💬 Chat e Comandos**: Implementação de comandos e eventos específicos para o bot do Discord.
-**🔐 Controle de Permissões**: Serviço dedicado para permitir ou restringir o acesso de usuários ao bot (`permit_user.py`).
-**💾 Persistência de Sessão**: Salvamento e carregamento automático de sessões para manter o contexto das conversas (`save_session.py`).
-**📜 Histórico de Mensagens**: Armazenamento de mensagens primárias e logs das interações (`save_messages.py`, `save_primary_message.py`).
-**🔑 Gestão de Credenciais**: Armazenamento seguro de tokens e credenciais necessárias para a API (`save_credentials.py`).
-**⚙️ Monitoramento de Ambiente**: Possui um sistema de "watcher" para variáveis de ambiente e limpeza de estados globais (`env_watcher.py`, `clear_global.py`).
+* [cite_start]**💬 Chat e Comandos**: Implementação de comandos e eventos específicos para o bot do Discord[cite: 1, 8].
+* [cite_start]**🔐 Controle de Permissões**: Serviço dedicado para permitir ou restringir o acesso de usuários ao bot (`permit_user.py`)[cite: 12].
+* [cite_start]**💾 Persistência de Sessão**: Salvamento e carregamento automático de sessões para manter o contexto das conversas (`save_session.py`)[cite: 14, 15].
+* [cite_start]**📜 Histórico de Mensagens**: Armazenamento de mensagens primárias e logs das interações (`save_messages.py`, `save_primary_message.py`)[cite: 13, 14].
+* [cite_start]**🔑 Gestão de Credenciais**: Armazenamento seguro de tokens e credenciais necessárias para a API (`save_credentials.py`)[cite: 12, 13].
+* [cite_start]**⚙️ Monitoramento de Ambiente**: Possui um sistema de "watcher" para variáveis de ambiente e limpeza de estados globais (`env_watcher.py`, `clear_global.py`)[cite: 11, 12].
 
 ## 📂 Estrutura do Projeto
 
