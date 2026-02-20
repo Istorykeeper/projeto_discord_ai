@@ -1,50 +1,53 @@
 # projeto_discord_ai
 Um bot de Discord avançado para integração com CharacterAI. Possui sistema de persistência de sessões, gerenciamento de permissões por usuário, salvamento automático de histórico de conversas e suporte a múltiplas instâncias de chat.
 
+# 🤖 Discord CharacterAI Bot
 
-# 🤖 Discord CharacterAI Integration Framework
+[cite_start]Este projeto é uma integração entre o Discord e a plataforma CharacterAI, permitindo que os usuários conversem com personagens de inteligência artificial diretamente pelos canais do servidor. [cite: 1, 8] [cite_start]O sistema foi desenvolvido com foco em estabilidade, persistência de dados e controle de acesso. [cite: 12, 13, 15]
 
-Este projeto é uma ponte avançada entre o ecossistema do Discord e a API do **CharacterAI**. Diferente de integrações simples, este bot foi construído com uma arquitetura modular focada em **estabilidade** e **persistência**, permitindo que personagens de IA mantenham conversas longas e coerentes dentro do servidor.
+## ✨ Funcionalidades
 
-## 🧐 Como o Bot Funciona?
+* [cite_start]**💬 Chat em Tempo Real**: Comandos e eventos otimizados para interação contínua com IAs. [cite: 1, 8]
+* [cite_start]**🔐 Controle de Acesso**: Sistema de permissão para gerenciar quais usuários podem interagir com o bot. [cite: 12]
+* [cite_start]**💾 Persistência de Sessão**: Salva automaticamente o estado da conversa para que o contexto não seja perdido entre reinicializações. [cite: 15]
+* [cite_start]**📜 Histórico de Mensagens**: Armazenamento de mensagens primárias e logs de conversas para auditoria e continuidade. [cite: 14]
+* [cite_start]**🔑 Gestão de Credenciais**: Serviço dedicado para o armazenamento seguro de tokens e credenciais necessárias. [cite: 13]
+* [cite_start]**⚙️ Monitoramento de Ambiente**: Possui um "watcher" para variáveis de ambiente e limpeza de estados globais. [cite: 11, 12]
 
-O bot opera através de um ciclo de vida inteligente que garante que nenhuma informação seja perdida entre as sessões de uso:
+## 📂 Estrutura do Projeto
 
-1. **Autenticação e Sessão**: Ao ser iniciado, o bot carrega credenciais seguras e restabelece a conexão com a API do CharacterAI. Ele utiliza um gestor de sessões para verificar se existe um chat anterior ativo.
-2. **Processamento de Mensagens**: Quando um utilizador interage, o bot consulta o módulo de permissões para verificar se o utilizador está autorizado. Se sim, a mensagem é enviada para a IA.
-3. **Memória e Persistência**: Cada resposta da IA e cada pergunta do utilizador são filtradas e salvas localmente. Isso permite que, mesmo que o bot seja desligado, ao voltar, ele saiba exatamente onde a conversa parou.
-4. **Monitorização**: O sistema inclui um "Watcher" que observa ficheiros de configuração e estados globais, permitindo ajustes em tempo real sem interrupção do serviço.
+* [cite_start]**`bot/`**: Contém a lógica de comandos, eventos e a instância principal do bot Discord. [cite: 1, 8, 10]
+* [cite_start]**`services/`**: Scripts responsáveis pelo backend, incluindo salvamento de sessões, mensagens e validação de usuários. [cite: 12, 13, 14, 15]
+* [cite_start]**`save/`**: Diretório para armazenamento local de dados de usuários e configurações globais. [cite: 16]
+* [cite_start]**`config.py`**: Centraliza as definições e variáveis globais do sistema. [cite: 10]
+* [cite_start]**`main.py`**: Ponto de entrada para execução da aplicação. [cite: 10, 11]
 
-## ✨ Funcionalidades Detalhadas
+## 🚀 Como Instalar
 
-### 🧠 Integração com IA
-* **Chat Fluido**: Respostas em tempo real integradas nativamente nos canais do Discord.
-* **Manutenção de Contexto**: Sistema que evita que a IA "perca a memória" durante conversas extensas.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/projeto_discord_CharacterAi.git](https://github.com/seu-usuario/projeto_discord_CharacterAi.git)
+    cd projeto_discord_CharacterAi
+    ```
 
-### 🛡️ Segurança e Controle
-* **Módulo de Permissões (`permit_user.py`)**: Sistema de lista branca que permite aos administradores controlar exatamente quem pode consumir os recursos do bot.
-* **Gestão de Credenciais**: Armazenamento isolado de tokens para evitar exposição de chaves sensíveis.
+2.  [cite_start]**Instale as dependências necessárias:** [cite: 11]
+    ```bash
+    pip install -r requirements.txt.txt
+    ```
 
-### 💾 Gestão de Dados (Persistence Layer)
-* **Save System**: Localizado na pasta `/save`, o bot utiliza serialização de dados para guardar:
-    * Histórico completo de diálogos.
-    * Mensagens primárias (âncoras de contexto).
-    * Tokens de sessão e estados de utilizadores específicos.
+3.  [cite_start]**Configure suas credenciais:** [cite: 1]
+    * [cite_start]Crie ou edite o arquivo `.env` na raiz do projeto. [cite: 1]
+    * Adicione seu `DISCORD_TOKEN` e as chaves da `CHARACTER_AI`.
 
-### 🛠️ Estabilidade Técnica
-* **Limpeza Global**: Rotinas que limpam ficheiros temporários e resets de memória para evitar sobrecarga do servidor.
-* **Watcher de Ambiente**: Carregamento dinâmico do ficheiro `.env` para atualizações de tokens sem necessidade de reiniciar todo o código.
+4.  [cite_start]**Inicie o bot:** [cite: 10, 11]
+    ```bash
+    python main.py
+    ```
 
-## 📂 Estrutura de Pastas
+## 🛠️ Tecnologias Utilizadas
 
-* **`/bot`**: Contém a interface do utilizador (comandos) e os gatilhos de eventos.
-* **`/services`**: Contém a inteligência de backend (salvamento, validação e lógica de negócio).
-* **`/save`**: Onde a "memória" do bot reside (ficheiros JSON/binários).
-* **`main.py`**: Orquestrador principal do sistema.
+* [cite_start]**Linguagem**: Python [cite: 11]
+* [cite_start]**Bibliotecas**: Discord.py, CharacterAI API, Python-dotenv [cite: 1, 11]
 
-## 🚀 Guia de Instalação
-
-1. **Clonar o Repositório**:
-   ```bash
-   git clone [https://github.com/Istorykeeper/projeto_discord_ai.git](https://github.com/Istorykeeper/projeto_discord_ai.git)
-   cd projeto_discord_ai
+---
+**Desenvolvido por [Seu Nome/User]**
