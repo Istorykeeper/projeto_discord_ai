@@ -35,7 +35,7 @@ Este projeto é uma integração entre o Discord e a plataforma CharacterAI, per
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/Istorykeeper/projeto_discord_ai.git](https://github.com/Istorykeeper/projeto_discord_ai.git)
+    git clone https://github.com/Istorykeeper/projeto_discord_ai.git
     cd projeto_discord_ai
     ```
 
