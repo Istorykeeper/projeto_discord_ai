@@ -67,6 +67,10 @@ Para que o bot funcione, você precisará do seu token de autenticação pessoal
    * *Exemplo: Se aparecer `Token abc123xyz...`, você deve copiar apenas o código `abc123xyz...`.*
 8. Cole este valor no seu arquivo `.env` no campo correspondente às credenciais da CharacterAI.
 
+<img width="934" height="869" alt="image" src="https://github.com/user-attachments/assets/5b6c8039-d9c5-4c2b-9dbf-a5dfacc8a049" />
+
+
+
 ---
 
 ### ⚠️ Aviso de Projeto Open Source
