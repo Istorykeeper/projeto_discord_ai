@@ -4,45 +4,27 @@ Um bot de Discord avançado para integração com CharacterAI. Possui sistema de
 
 # 🤖 Discord CharacterAI Bot
 
-[cite_start]Este projeto realiza a integração entre o Discord e a plataforma CharacterAI[cite: 1], permitindo que usuários interajam com personagens de inteligência artificial em servidores. [cite_start]O sistema foca em persistência de dados e gerenciamento modular de serviços[cite: 11, 16].
+Este projeto é uma integração poderosa entre o Discord e a plataforma **CharacterAI**, permitindo que usuários interajam com personagens de IA diretamente em servidores do Discord. O sistema foi desenvolvido com foco em persistência de dados, garantindo que o contexto das conversas e as configurações de sessão não sejam perdidas.
 
 ## ✨ Funcionalidades
 
-* [cite_start]**💬 Chat e Comandos**: Implementação de comandos e eventos específicos para o bot do Discord[cite: 1, 8].
-* [cite_start]**🔐 Controle de Permissões**: Serviço dedicado para permitir ou restringir o acesso de usuários ao bot (`permit_user.py`)[cite: 12].
-* [cite_start]**💾 Persistência de Sessão**: Salvamento e carregamento automático de sessões para manter o contexto das conversas (`save_session.py`)[cite: 14, 15].
-* [cite_start]**📜 Histórico de Mensagens**: Armazenamento de mensagens primárias e logs das interações (`save_messages.py`, `save_primary_message.py`)[cite: 13, 14].
-* [cite_start]**🔑 Gestão de Credenciais**: Armazenamento seguro de tokens e credenciais necessárias para a API (`save_credentials.py`)[cite: 12, 13].
-* [cite_start]**⚙️ Monitoramento de Ambiente**: Possui um sistema de "watcher" para variáveis de ambiente e limpeza de estados globais (`env_watcher.py`, `clear_global.py`)[cite: 11, 12].
+* **💬 Integração Real-time**: Converse com personagens do CharacterAI via chat do Discord.
+* **🔐 Gerenciamento de Permissões**: Controle de acesso através de um serviço dedicado para permitir ou restringir usuários.
+* **💾 Persistência de Sessão**: Salvamento automático das credenciais e estados de chat.
+* **📜 Histórico de Conversas**: Armazenamento detalhado de mensagens primárias e logs de interação.
+* **🛠️ Serviços de Suporte**: Inclui utilitários para limpeza de estados globais e monitoramento de variáveis de ambiente.
 
 ## 📂 Estrutura do Projeto
 
-* [cite_start]**`bot/`**: Contém a lógica de comandos (`commands.py`), eventos (`events.py`) e a instância principal do bot[cite: 1, 8, 10].
-* [cite_start]**`services/`**: Scripts de backend para gerenciamento de dados, sessões e usuários[cite: 11, 12, 13].
-* [cite_start]**`save/`**: Diretórios destinados ao armazenamento local de informações globais e de usuários[cite: 15, 16].
-* [cite_start]**`config.py` e `main.py`**: Configurações centrais e ponto de entrada da aplicação[cite: 10].
+* **/bot**: Contém a lógica de comandos e eventos do Discord.
+* **/services**: Scripts especializados em tarefas de back-end (salvamento de dados, sessões e permissões).
+* **/save**: Diretório destinado ao armazenamento local de arquivos JSON e binários de usuários.
+* **main.py**: O ponto de entrada principal da aplicação.
+* **config.py**: Arquivo central de configurações do sistema.
 
-## 🚀 Como Instalar
+## 🚀 Como Instalar e Rodar
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/seu-usuario/projeto_discord_CharacterAi.git](https://github.com/seu-usuario/projeto_discord_CharacterAi.git)
-    cd projeto_discord_CharacterAi
-    ```
-
-2.  **Instale as dependências:**
-    * [cite_start]O projeto utiliza as bibliotecas listadas em `requirements.txt.txt`[cite: 11].
-    ```bash
-    pip install -r requirements.txt.txt
-    ```
-
-3.  **Configuração:**
-    * [cite_start]Configure o arquivo `.env` com seu `DISCORD_TOKEN` e chaves da `CharacterAI`[cite: 1].
-
-4.  **Inicie o bot:**
-    ```bash
-    python main.py
-    ```
-
----
-**Desenvolvido com foco em integração e persistência.**
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/projeto_discord_CharacterAi.git](https://github.com/seu-usuario/projeto_discord_CharacterAi.git)
+   cd projeto_discord_CharacterAi
