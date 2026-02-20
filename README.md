@@ -21,7 +21,7 @@ O bot opera através de um ciclo de vida inteligente que garante que nenhuma inf
 * **Chat Fluido**: Respostas em tempo real integradas nativamente nos canais do Discord.
 * **Manutenção de Contexto**: Sistema que evita que a IA "perca a memória" durante conversas extensas.
 
-### 🛡️ Segurança e Controlo
+### 🛡️ Segurança e Controle
 * **Módulo de Permissões (`permit_user.py`)**: Sistema de lista branca que permite aos administradores controlar exatamente quem pode consumir os recursos do bot.
 * **Gestão de Credenciais**: Armazenamento isolado de tokens para evitar exposição de chaves sensíveis.
 
@@ -46,5 +46,5 @@ O bot opera através de um ciclo de vida inteligente que garante que nenhuma inf
 
 1. **Clonar o Repositório**:
    ```bash
-   git clone [https://github.com/teu-utilizador/projeto_discord_CharacterAi.git](https://github.com/teu-utilizador/projeto_discord_CharacterAi.git)
-   cd projeto_discord_CharacterAi
+   git clone [https://github.com/Istorykeeper/projeto_discord_ai.git](https://github.com/Istorykeeper/projeto_discord_ai.git)
+   cd projeto_discord_ai
