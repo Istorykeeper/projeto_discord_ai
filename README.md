@@ -7,12 +7,17 @@ Este projeto é uma integração entre o Discord e a plataforma CharacterAI, per
 
 ## ✨ Funcionalidades
 
-💬 Chat em Tempo Real**: Comandos e eventos otimizados para interação contínua com IAs. 
-🔐 Controle de Acesso**: Sistema de permissão para gerenciar quais usuários podem interagir com o bot.
-💾 Persistência de Sessão**: Salva automaticamente o estado da conversa para que o contexto não seja perdido entre reinicializações. 
-📜 Histórico de Mensagens**: Armazenamento de mensagens primárias e logs de conversas para auditoria e continuidade. 
-🔑 Gestão de Credenciais**: Serviço dedicado para o armazenamento seguro de tokens e credenciais necessárias.
-⚙️ Monitoramento de Ambiente**: Possui um "watcher" para variáveis de ambiente e limpeza de estados globais.
+💬 **Chat em Tempo Real**: Comandos e eventos otimizados para interação contínua com IAs. 
+
+🔐 **Controle de Acesso**: Sistema de permissão para gerenciar quais usuários podem interagir com o bot.
+
+💾 **Persistência de Sessão**: Salva automaticamente o estado da conversa para que o contexto não seja perdido entre reinicializações. 
+
+📜 **Histórico de Mensagens**: Armazenamento de mensagens primárias e logs de conversas para auditoria e continuidade.
+
+🔑 **Gestão de Credenciais**: Serviço dedicado para o armazenamento seguro de tokens e credenciais necessárias.
+
+⚙️ **Monitoramento de Ambiente**: Possui um "watcher" para variáveis de ambiente e limpeza de estados globais.
 
 ## 📂 Estrutura do Projeto
 
