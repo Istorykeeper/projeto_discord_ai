@@ -22,9 +22,13 @@ Este projeto é uma integração entre o Discord e a plataforma CharacterAI, per
 ## 📂 Estrutura do Projeto
 
 **`bot/`**: Contém a lógica de comandos, eventos e a instância principal do bot Discord.
+
 **`services/`**: Scripts responsáveis pelo backend, incluindo salvamento de sessões, mensagens e validação de usuários. 
+
 **`save/`**: Diretório para armazenamento local de dados de usuários e configurações globais.
+
 **`config.py`**: Centraliza as definições e variáveis globais do sistema. 
+
 **`main.py`**: Ponto de entrada para execução da aplicação. 
 
 ## 🚀 Como Instalar
