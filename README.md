@@ -53,9 +53,29 @@ Este projeto é uma integração entre o Discord e a plataforma CharacterAI, per
     python main.py
     ```
 
+## 🔑 Como obter o seu Token do Character.AI
+
+Para que o bot funcione, você precisará do seu token de autenticação pessoal da plataforma. Siga os passos abaixo:
+
+1. Acesse o site oficial do [Character.AI](https://character.ai) no seu navegador e faça login.
+2. Abra as **Ferramentas do Desenvolvedor** do navegador (pressione `F12`, `Ctrl+Shift+I` ou `Cmd+J` no Mac).
+3. Vá até a aba **Network** (Rede).
+4. Interaja com o site de alguma forma (por exemplo, clique no seu perfil ou atualize a página).
+5. Procure por qualquer requisição na lista (como `following` ou `info`) e clique nela.
+6. No painel que abrir, procure pela seção **Request Headers** (Cabeçalhos de Requisição).
+7. Encontre o campo chamado `Authorization` e copie o valor que aparece após a palavra `Token`.
+   * *Exemplo: Se aparecer `Token abc123xyz...`, você deve copiar apenas o código `abc123xyz...`.*
+8. Cole este valor no seu arquivo `.env` no campo correspondente às credenciais da CharacterAI.
+
+---
+
+### ⚠️ Aviso de Projeto Open Source
+Este projeto é **open source** e foi desenvolvido para fins educacionais e de automação. Por se tratar de uma integração complexa que depende de APIs de terceiros e sistemas de arquivos locais, **o software pode apresentar falhas, bugs ou comportamentos inesperados**. Encorajamos a comunidade a reportar problemas e contribuir com melhorias.
+
 ## 🛠️ Tecnologias Utilizadas
 
 **Linguagem**: Python
+
 **Bibliotecas**: Discord.py, CharacterAI API, Python-dotenv ]
 
 ---
