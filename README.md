@@ -80,7 +80,7 @@ Este projeto é **open source** e foi desenvolvido para fins educacionais e de a
 
 **Linguagem**: Python
 
-**Bibliotecas**: Discord.py, CharacterAI API, Python-dotenv ]
+**Bibliotecas**: Discord.py, CharacterAI API, Python-dotenv
 
 **Créditos**: https://github.com/Xtr4F/PyCharacterAI
 
