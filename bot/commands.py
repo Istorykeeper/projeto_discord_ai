@@ -224,11 +224,12 @@ async def sobre(ctx):
         ),
         inline=False
     )
-
+    app_info = await bot.application_info()
+    owner = app_info.owner
     embed.add_field(
         name="👑 Criador",
         value=(
-            f"Desenvolvido por **IstoryKeeper**\n"
+            f"Desenvolvido por **{owner.name}**\n"
             "Projeto em constante evolução 🚀"
         ),
         inline=False
@@ -649,3 +650,4 @@ async def historico_privado(ctx):
         await ctx.send(f"{ctx.author.mention}, não consegui te enviar DM. Verifique suas configurações de privacidade.")
 
         return
+
